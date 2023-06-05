@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oef4</title>
+</head>
+<body>
+    <script>
+        let invoer1, invoer2;
+
+        invoer1 = prompt('Geef een getal op');
+        invoer2 = prompt('Geef nog een getal op');
+
+        let getal1 = parseInt(invoer1);
+        let getal2 = parseInt(invoer2);
+
+        console.log(`Som: ${getal1 + getal2}`);
+        console.log(`product: ${getal1 * getal2}`);
+        if(getal1 > getal2){
+            console.log(`Verschil: ${getal1 - getal2}`);
+            console.log(`Quotient: ${getal1 / getal2}`);
+        }else{
+            console.log(`Verschil: ${getal2 - getal1}`);
+            console.log(`Quotient: ${getal2 / getal1}`);
+        }
+        
+        
+    </script>
+</body>
+</html>
