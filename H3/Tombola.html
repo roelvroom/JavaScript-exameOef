@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombola</title>
+</head>
+<body>
+    <div id="resultaat"></div>
+
+    <script>
+        let lotjes = 1;
+        let prijs = 0;
+        let prijsComp = 1899;
+
+        while(lotjes < 5){
+            lotjes++;
+            prijs++;
+        }
+        for(i=prijs; i<=prijsComp; i+=6){
+            lotjes++;
+        }
+        alert('Vanaf lot ' + Math.ceil(lotjes) + ' is er winst');
+    </script>
+</body>
+</html>
