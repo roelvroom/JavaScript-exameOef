@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naamIngeven</title>
+</head>
+<body>
+    <input type="button" value="Naam ingeven" id="btnNaamIngeven" name="btnNaamIngeven" onclick="btnNaamIngeven()">
+    <div id="resultaar"></div>
+    <script>
+        const res = document.getElementById('resultaar');
+        let naam = "";
+
+        let btnNaamIngeven = () => {
+            naam += prompt('geef je naam in!')
+            res.innerHTML += `Je naam: ${naam}`;
+        };
+
+        
+    </script>
+</body>
+</html>

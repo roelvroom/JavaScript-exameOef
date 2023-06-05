@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BerkenFunctie</title>
+</head>
+<body>
+
+    <div id="resultaat"></div>
+    <script>
+        let getal1 = parseInt(prompt('Geef je eerste getal op'));
+        let getal2 = parseInt(prompt('Geef je tweede getal op'));
+        const res = document.getElementById("resultaat")
+
+        function berekenSom(getal1, getal2){
+            return getal1 + getal2
+        };
+        function berekenVerschil(getal1, getal2){
+            if(getal1 > getal2){
+                return getal1 - getal2
+            }else{
+                return getal2 - getal1
+            }
+        };
+        function berekenProduct(getal1, getal2){
+            return getal1 * getal2
+        };
+
+        res.innerHTML += 
+                 'De ingegeven getallen zijn '+ getal1 + ' en ' + getal2 +'<br/>'
+               + 'De som is: '+ berekenSom(getal1, getal2) + '<br/>' 
+               + 'Het verschil is: ' + berekenVerschil(getal1, getal2) + '<br/>'
+               + 'Het product is: ' + berekenProduct(getal1, getal2) + '<br/>';
+
+    </script>
+</body>
+</html>
