@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oef3</title>
+</head>
+<body>
+    <script>
+        let invoer = prompt("Geef een getal tussen 10 en 20");
+        let getal = parseInt(invoer);
+        let resultaat = 0;
+
+        switch(true){
+            case getal < 10:
+                alert('Getal moet groter zijn dan 10');
+                break;
+            case getal > 20:
+                alert('Getal moet kleiner zijn dan 20');
+                break;
+            case (getal < 10 && getal > 20):
+                resultaat += getal * getal;
+                console.log(resultaat) 
+        }
+
+    </script>
+</body>
+</html>
