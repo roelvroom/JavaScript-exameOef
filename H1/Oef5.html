@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oef5</title>
+</head>
+<body>
+    <h1>De javaScript-telmachine</h1>
+    <p id="Telmachiene"></p>
+
+
+    <script>
+        let invoer1 = prompt("geef een getal op");
+        let invoer2 = prompt("geef nog een getal op");
+
+        let getal1 = parseInt(invoer1);
+        let getal2 = parseInt(invoer2);
+
+        document.getElementById("Telmachiene").innerHTML = `${getal1} plus ${getal2} = 3${getal1 + getal2}`
+    </script>
+</body>
+</html>
